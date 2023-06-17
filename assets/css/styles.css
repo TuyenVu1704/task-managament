@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Sora, sans-serif;
+    font-weight: 400;
+    background: #131517;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1144px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    --width: 110px;
+    --height: 40px;
+    min-width: var(--width);
+    line-height: var(--height);
+    text-align: center;
+    border: 1px solid #272633;
+    border-radius: 8px;
+}
+
+.text-linear {
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Header */
+.header-top {
+    margin-top: 40px;
+}
+
+.header-fix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 87px;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+.nav-bar__item--link {
+    line-height: 1.5;
+    color: #858b93;
+    padding: 3px 18px;
+}
+
+.nav-bar__item--link:hover {
+    color: #f9f9f9;
+}
+
+.nav-bar__item--active {
+    position: relative;
+    color: #f9f9f9;
+}
+
+.nav-bar__item--active::before {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 2px;
+    background: #6aea5c;
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+}
+
+.header-cta {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.header-cta__link {
+    color: #858b93;
+}
+
+/* <!-- Header-info --> */
+
+.header-info {
+    margin: 95px 0 112px;
+}
+
+.header-info__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-info__list__decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.header-info__title {
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1.17;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.header-info__title span {
+    position: relative;
+}
+
+.header-info__title span::before {
+    content: url(../imgs/header-deco-title.svg);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-info__title span::after {
+    content: url(../imgs/header-deco-title-02.svg);
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: -14px;
+    width: 100%;
+    height: 100%;
+}
