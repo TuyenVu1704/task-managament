@@ -244,6 +244,7 @@
                                     name="collect-check"
                                     id="School"
                                     class="collect-check"
+                                    hidden
                                 />
                                 <label for="School">School</label>
                             </div>
@@ -253,6 +254,7 @@
                                     name="collect-check"
                                     id="Personal"
                                     class="collect-check"
+                                    hidden
                                 />
                                 <label for="Personal">Personal</label>
                             </div>
@@ -270,17 +272,16 @@
                                         >
                                             <path
                                                 d="M5 1L1 4.5L5 8"
-                                                stroke="#D1D1D3"
+                                                stroke="currentColor"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
                                             />
                                         </svg>
                                     </button>
-                                    <span class="dasboard-cta-title"
-                                        >School</span
-                                    >
-                                    <span class="dasboard-cta-title"
-                                        >Personal</span
+                                    <label
+                                        for="School"
+                                        class="dasboard-cta-title"
+                                        >School</label
                                     >
                                 </div>
                                 <div class="dashboard-content-menu">
@@ -295,6 +296,116 @@
                                         class="dashboard-content-menu__img"
                                     />
                                 </div>
+                            </div>
+                            <div class="dasboard-content-body">
+                                <div class="dasboard-content__list">
+                                    <span class="sort-img">
+                                        <svg
+                                            width="10"
+                                            height="5"
+                                            viewBox="0 0 10 5"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M0 0H10V1H0V0ZM1 2H9V3H1V2ZM7 4H3V5H7V4Z"
+                                                fill="#C4C4C4"
+                                            />
+                                        </svg>
+                                    </span>
+
+                                    <span>Sort</span>
+                                    <ul class="dasboard-content__list__sort">
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="school-sort"
+                                                id="school-sort"
+                                                class="sort-checkbox"
+                                            /><label for="school-sort"
+                                                >Finish the Easay collaboration
+                                            </label>
+                                        </li>
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="school-sort"
+                                                id="school-sort"
+                                                class="sort-checkbox"
+                                            /><label for="school-sort"
+                                                >Do the math for next
+                                                monday</label
+                                            >
+                                        </li>
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="school-sort"
+                                                id="school-sort"
+                                                class="sort-checkbox"
+                                            /><label for="school-sort"
+                                                >Read the next chapter of the
+                                                book</label
+                                            >
+                                        </li>
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="school-sort"
+                                                id="school-sort"
+                                                class="sort-checkbox"
+                                            /><label for="school-sort"
+                                                >Send the collabaration files to
+                                                jerusha</label
+                                            >
+                                        </li>
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                name="school-sort"
+                                                id="school-sort"
+                                                class="sort-checkbox"
+                                            /><label for="school-sort"
+                                                >Finish the powerpoint
+                                                presentation</label
+                                            >
+                                        </li>
+                                        <li
+                                            class="dasboard-content___list__item"
+                                        >
+                                            <button class="sort-add">
+                                                <svg
+                                                    width="6"
+                                                    height="6"
+                                                    viewBox="0 0 6 6"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M2.34395 6V0H3.64331V6H2.34395ZM0 3.58763V2.42474H6V3.58763H0Z"
+                                                        fill="#F9F9F9"
+                                                    />
+                                                </svg>
+                                            </button>
+                                            <label for="school-sort"
+                                                >Add task</label
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dasboard-content__Daily"></div>
                             </div>
                         </div>
                     </div>

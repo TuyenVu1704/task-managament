@@ -205,6 +205,7 @@ a {
 
 .dasboard-body {
     display: flex;
+    margin: 0 116px 0 180px;
     padding: 18px 15px 0 15px;
     background: #1f2326;
     border-radius: 8px 8px 0px 0px;
@@ -245,18 +246,20 @@ a {
     width: 100%;
     margin-top: 12px;
     margin-left: -15px;
-    padding: 11px 0;
-    background: #2b2d2f;
-    display: flex;
-    align-items: center;
+
+    /* background: #2b2d2f; */
 }
 
-.collect-check {
-    margin-left: 15px;
+.collection-cta label {
     position: relative;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    color: #858b93;
+    opacity: 0.6;
+    padding: 11px 40px;
 }
 
-.collect-check::before {
+.collection-cta [type="radio"]:not(:checked) ~ label::before {
     content: "";
     display: inline-block;
     width: 17px;
@@ -264,11 +267,11 @@ a {
     background: #ff7667;
     border-radius: 5px;
     position: absolute;
-    top: -3px;
-    left: 0;
+    top: 10px;
+    left: 12px;
 }
 
-.collect-check::after {
+.collection-cta [type="radio"]:checked ~ label::after {
     content: "";
     display: inline-block;
     width: 17px;
@@ -276,18 +279,74 @@ a {
     background: #ae8ff9;
     border-radius: 5px;
     position: absolute;
-    top: -3px;
-    left: 0;
+    top: 10px;
+    left: 12px;
+}
+.collection-cta [type="radio"]:checked ~ label {
+    display: block;
+    padding: 11px 40px;
+    background: #2b2d2f;
+    color: #d5d5d6;
 }
 
-.collect-check:has(:not(:checked)) ~ .collect-check::after {
-    display: none;
+/* Dashboard Content */
+
+.dasboard-content {
+    width: 642px;
+    padding: 25px 30px;
+    background: #0d1012;
 }
 
-.collection-cta label {
-    margin-left: 17px;
-    font-size: 1.2rem;
-    line-height: 1.25;
-    color: #858b93;
-    opacity: 0.6;
+.dasboard-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dasboard-cta {
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.dasboard-cta-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: #f9f9f9;
+    background: #151a1e;
+    border-radius: 8px;
+    border: none;
+}
+
+.dasboard-cta-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: #f9f9f9;
+}
+
+.dashboard-content-menu {
+    display: flex;
+    align-items: center;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    margin-right: 80px;
+}
+
+.dot {
+    width: 2px;
+    height: 2px;
+    background: #838386;
+}
+
+.dasboard-content-body {
+    display: flex;
 }
